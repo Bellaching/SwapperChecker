@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+       <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swapper and Checker"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#DA3698"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+
+        <EditText
+            android:id="@+id/firstinput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:hint="Input text"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView"
+            android:layout_margin="50dp"
+            android:padding="20dp"
+        />
+
+    <Button
+        android:id="@+id/swapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:width="50dp"
+
+        android:height="55dp"
+        android:onClick="onSwap"
+        android:text="Swap" />
+
+    <EditText
+        android:id="@+id/secondinput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:hint="Input text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/firstinput"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        />
+
+    <Button
+        android:id="@+id/checker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swapper"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="106dp"
+        android:width="50dp"
+
+        android:height="55dp"
+        android:onClick="onCheck"
+        android:text="Check" />
+
+</RelativeLayout>
